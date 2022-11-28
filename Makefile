@@ -7,7 +7,7 @@ CXX=g++
 FILES=data_structures/disjoint_set.cpp graph.cpp main.cpp sort/msort.cpp
 
 # Using OpenCV for Visualization
-OPENCV=1
+OPENCV=0
 ifeq ($(OPENCV), 1)
 	LDFLAGS+=  `pkg-config --libs opencv`
 	CFLAGS+= -DOPENCV=1 `pkg-config --cflags opencv`
