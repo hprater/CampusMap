@@ -1,0 +1,3 @@
+/Users/haydenprater/School/2022 Fall/Algorithms/UofACampusMap/cmake-build-debug/CMakeFiles/UofACampusMap.dir
+/Users/haydenprater/School/2022 Fall/Algorithms/UofACampusMap/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/haydenprater/School/2022 Fall/Algorithms/UofACampusMap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
