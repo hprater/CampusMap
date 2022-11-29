@@ -15,11 +15,13 @@ struct EdgeKeyComparison {
 std::vector<Edge> constructMSTPrim(Graph G) {
     std::vector<Edge> edges = G.exportEdges(); // Graph's edges
 
-        //Code
+    //Code
+    // (size, Initialized to)
+    std::vector<bool> T(G.n, false);
     std::vector<int> distance(G.n, INT_MAX);
     std::vector<int> parent(G.n, -1);
-    std::vector<bool> T(G.n, false);
 
+    //Initialize
     for (int i = 0; i < G.e[0].size(); ++i) {
         int v = G.e[0][i].v;
         int w = G.e[0][i].w;
