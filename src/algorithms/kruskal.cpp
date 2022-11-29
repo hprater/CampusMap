@@ -24,7 +24,7 @@ std::vector<Edge> constructMSTKruskal(Graph G) {
 
     std::vector<int> parent(n, -1);
     sort(edges, 0, edges.size()-1);
-    std::vector<Edge> mst;
+    std::vector<Edge> MST;
     for (int i = 0; i < edges.size(); ++i) {
         int u = edges[i].u;
         int v = edges[i].v;
@@ -32,9 +32,9 @@ std::vector<Edge> constructMSTKruskal(Graph G) {
         int pv = find(v, parent);
         if (pu != pv) {
             parent[pu] = pv;
-            mst.push_back(Edge(edges[i]));
+            MST.push_back(Edge(edges[i]));
         }
     }
-    return mst;
+    return MST;
 }
 
